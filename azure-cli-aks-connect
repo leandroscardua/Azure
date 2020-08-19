@@ -1,0 +1,27 @@
+#Azure CLI demo
+
+# Login
+az login
+
+# show subscription
+az account list --output table
+
+# Select a subscription
+az account set --subscription "name of the subscription"
+
+# Install Kubernetes command-line client, run with sudo if necessary.
+az aks install-cli
+
+# Get aks list
+az aks list --output table
+
+# Get credentials
+az aks get-credentials --name MyManagedCluster --resource-group MyResourceGroup
+
+# Return a list of the cluster nodes.
+kubectl get nodes
+
+
+
+
+
